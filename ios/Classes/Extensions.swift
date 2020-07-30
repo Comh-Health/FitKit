@@ -78,7 +78,7 @@ extension HKSampleType {
         case "mindfullness":
             return (
                 HKSampleType.categoryType(forIdentifier: .mindfulSession),
-                HKUnit.notApplicable()
+                HKUnit.minute()
             )
         default:
             return nil
