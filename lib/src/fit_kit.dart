@@ -79,6 +79,8 @@ class FitKit {
         return "stand_time";
       case DataType.EXERCISE_TIME:
         return "exercise_time";
+      case DataType.MINDFULLNESS:
+        return "mindfullness";
     }
     throw Exception('dataType $type not supported');
   }
@@ -94,7 +96,8 @@ enum DataType {
   WATER,
   SLEEP,
   STAND_TIME,
-  EXERCISE_TIME
+  EXERCISE_TIME,
+  MINDFULLNESS
 }
 
 class UnsupportedException implements Exception {
